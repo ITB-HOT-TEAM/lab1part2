@@ -1,7 +1,10 @@
+#include <iostream>
 #include "shapes.h"
 
+using namespace std;
+
    int Circle :: getArea() {
-        if(width != height){
+        if(this->width != this->height){
             cerr << "Data corrupted: Circle object has different values for width and height" << endl;
             throw std::exception();
         }
