@@ -1,23 +1,30 @@
 #include <iostream>
-#include "shapes.h"
 
 using namespace std;
 
 
+//Main
 int main(void)
 {
-    Triangle Tri;
+    Triangle tri;
+    Rectangle rect;
+    Circle circ;
 
-    Tri.setWidth(5);
-    Tri.setHeight(7);
+
+    rect.setWidth(5);
+    rect.setHeight(7);
+
+    circ.setWidth(5);
+    circ.setHeight(7);
+
+    tri.setWidth(5);
+    tri.setHeight(7);
 
     // Print the area of the object.
-    cout << "Total Triangle area: " << Tri.getArea() << endl;
-
-Rectangle Rect;
-   Rect.setWidth(2);
-   Rect.setHeight(6);
-   cout << "Total Rectangle Area:"<< Rect.getArea()<<endl;
+    cout << "Total Rectangle area: " << rect.getArea() << endl;
+    cout << "Total Circle area: " << circ.getArea() << endl;
+    cout << "Total Triangle area: " << tri.getArea() << endl;
+    cout << "Total of all objects area: " << rect.getArea()+circ.getArea()+tri.getArea() << endl;
 
     return 0;
 }
