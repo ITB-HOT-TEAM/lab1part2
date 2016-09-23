@@ -32,6 +32,11 @@ class Circle: public Shape
 {
     public:
     int getArea();
+    void setWidth(int);
+    void setHeight(int);
+
+    private:
+    const double pi = 3.14159265359;
 };
 
 #endif // SHAPES_H_INCLUDED
